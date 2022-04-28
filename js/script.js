@@ -19,10 +19,10 @@ if (navigator.serviceWorker) {
  * This function determines if an integer is negative or positive.
  */
 function myButtonClicked() {
-  const age = parseInt(document.getElementById("option-1").value)
-  const age = parseInt(document.getElementById("option-2").value)
-  const age = parseInt(document.getElementById("option-3").value)
-  const age = parseInt(document.getElementById("option-4").value)
+  const age = document.getElementById("option-1").checked
+  const age = document.getElementById("option-2").checked
+  const age = document.getElementById("option-3").checked
+  const age = document.getElementById("option-4").checked
 // if ... then ... elseif ... else example
   if (age == "option-1") {
     console.log("You can watch R-rated movies.")
