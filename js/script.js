@@ -25,15 +25,15 @@ function myButtonClicked() {
   const age = parseInt(document.getElementById("option-4").value)
 // if ... then ... elseif ... else example
   if (age == "option-1") {
-    console.log("You can watch R-rated movies alone.")
+    console.log("You can watch R-rated movies.")
   } 
   else if (age == "option-2") {
-    console.log("You can watch pg-13 rated movies alone.")
+    console.log("You can watch pg-13 rated movies.")
   } 
   else if (age == "option-3") {
-    console.log("You can watch G-rated movies alone.")
+    console.log("You can watch G-rated movies.")
   } 
   else {
-    console.log("You are too young to watch movies alone.") 
+    console.log("You are too young to watch most movies.") 
   }
 }
