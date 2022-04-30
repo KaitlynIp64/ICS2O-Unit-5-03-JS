@@ -1,7 +1,7 @@
 // Copyright (c) 2022 Kaitlyn Ip All rights reserved
 //
 // Created by: Kaitlyn Ip
-// Created on: Mar 2022
+// Created on: Apr 2022
 // This file contains xxx
 
 "use strict"
@@ -16,24 +16,24 @@ if (navigator.serviceWorker) {
 }
 
 /**
- * This function determines if an integer is negative or positive.
+ * Input
  */
 function myButtonClicked() {
-  const age = document.getElementById("option-1").checked
-  const age = document.getElementById("option-2").checked
-  const age = document.getElementById("option-3").checked
-  const age = document.getElementById("option-4").checked
-// if ... then ... elseif ... else example
-  if (age == "option-1") {
-    console.log("You can watch R-rated movies.")
-  } 
-  else if (age == "option-2") {
-    console.log("You can watch pg-13 rated movies.")
-  } 
-  else if (age == "option-3") {
-    console.log("You can watch G-rated movies.")
-  } 
-  else {
+  const age17 = document.getElementById("age17").checked
+  const age13 = document.getElementById("age13").checked
+  const age5 = document.getElementById("age5").checked
+
+  // process
+  if (age17 == true) {
+      document.getElementById("answer").innerHTML= "You can see an R rated movie alone"
+  } else if (age13 == true) {
+      document.getElementById("answer").innerHTML= "You can see an PG 13 rated movie alone"
+  } else if (age5 == true) {
+      document.getElementById("answer").innerHTML= "You can see an G rated movie alone"
+  } else {
+      document.getElementById("answer").innerHTML= "Uh. You are too young for most things!"
+  }
+}
     console.log("You are too young to watch most movies.") 
   }
 }

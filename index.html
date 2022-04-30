@@ -34,37 +34,38 @@
       </header>
       <main class="mdl-layout__content">
         <img src="./img/3D_Glasses_2_by_Merlin2525.svg" alt="Movie" width="60%" height="60%" align="left">
-        <!-- Radio Buttons -->
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-          <input type="radio" id="option-1" class="mdl-radio__button" name="options" value="1" checked>
-          <span class="mdl-radio__label">Age 17 or Older</span>
+        <!--Radio Buttons-->
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="age17">
+          <input checked class="mdl-radio__button" id="age17" name="age" type="radio" value="age17">
+          <span class="mdl-radio__label">17 years old and older </span>
         </label>
         <br>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-          <input type="radio" id="option-2" class="mdl-radio__button" name="options" value="2">
-          <span class="mdl-radio__label">Age 13-17</span>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="age13">
+          <input class="mdl-radio__button" id="age13" name="age" type="radio" value="age13">
+          <span class="mdl-radio__label">13 years old</span>
         </label>
         <br>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-3">
-          <input type="radio" id="option-3" class="mdl-radio__button" name="options" value="3">
-          <span class="mdl-radio__label">Age 5-12</span>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="age5">
+          <input checked class="mdl-radio__button" id="age5" name="age" type="radio" value="age5">
+          <span class="mdl-radio__label">5 years old</span>
         </label>
         <br>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-4">
-          <input type="radio" id="option-4" class="mdl-radio__button" name="options" value="4">
-          <span class="mdl-radio__label">Age 4 or Younger</span>
+        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="0">
+          <input class="mdl-radio__button" id="0" name="age" type="radio" value="0" checked = "true">
+          <span class="mdl-radio__label">Younger then 5</span>
         </label>
-        <br>
-        <br>
+          <p></p>
+          <br>
+          <br>
         <!-- Raised button with ripple -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="myButtonClicked()"
-        >
-          Identify
-        </button>
-        <br>
-        <div id="age"></div>
+            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick= "myButtonClicked()">
+              Button
+            </button>
+        <!-- basic text -->
+        <p></p>
+            <br>
+            <br>
+        <div id="answer"></div>
       </main>
     </div>
   </body>
