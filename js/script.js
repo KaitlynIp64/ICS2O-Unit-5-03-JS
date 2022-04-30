@@ -25,15 +25,12 @@ function myButtonClicked() {
 
   // process
   if (age17 == true) {
-      document.getElementById("answer").innerHTML= "You can see an R rated movie alone"
+      document.getElementById("answer").innerHTML= "You can watch a R-rated movie alone."
   } else if (age13 == true) {
-      document.getElementById("answer").innerHTML= "You can see an PG 13 rated movie alone"
+      document.getElementById("answer").innerHTML= "You can watch a PG-13 rated movie alone."
   } else if (age5 == true) {
-      document.getElementById("answer").innerHTML= "You can see an G rated movie alone"
+      document.getElementById("answer").innerHTML= "You can watch a G-rated movie alone."
   } else {
-      document.getElementById("answer").innerHTML= "Uh. You are too young for most things!"
-  }
-}
-    console.log("You are too young to watch most movies.") 
+      document.getElementById("answer").innerHTML= "You are too young to watch movies alone."
   }
 }
