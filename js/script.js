@@ -19,18 +19,22 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  const age17 = document.getElementById("age17").checked
-  const age13 = document.getElementById("age13").checked
-  const age5 = document.getElementById("age5").checked
+  const age17 = document.getElementById("age17").checked;
+  const age13 = document.getElementById("age13").checked;
+  const age5 = document.getElementById("age5").checked;
 
   // process
   if (age17 == true) {
-      document.getElementById("answer").innerHTML= "You can watch a R-rated movie alone."
+      document.getElementById("answer").innerHTML= 
+        "You can watch a R-rated movie alone.";
   } else if (age13 == true) {
-      document.getElementById("answer").innerHTML= "You can watch a PG-13 rated movie alone."
+      document.getElementById("answer").innerHTML= 
+        "You can watch a PG-13 rated movie alone.";
   } else if (age5 == true) {
-      document.getElementById("answer").innerHTML= "You can watch a G-rated movie alone."
+      document.getElementById("answer").innerHTML= 
+        "You can watch a G-rated movie alone.";
   } else {
-      document.getElementById("answer").innerHTML= "You are too young to watch movies alone."
+      document.getElementById("answer").innerHTML= 
+        "You are too young to watch movies alone.";
   }
 }
